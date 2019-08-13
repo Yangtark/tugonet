@@ -1,0 +1,99 @@
+﻿[
+	{
+		        "name":"攀枝花吉禄芒果",
+	            "price":"￥32.90",
+	            "url":"images/gh1.jpg",
+				"tip":"攀枝花吉禄芒果8斤 简装 芒里悠闲,营养美味",
+				"goodsId":"20190801",
+				"xq":"images/hw1.jpg"
+	},
+	{
+	            "name":"唯锦记小磨香油 石磨水代法",
+	            "price":"￥16.80",
+	            "url":"images/gh2.jpg",
+	            "tip":"唯锦记小磨香油石磨水代法-168ml 真真真好用",
+				"goodsId":"20190802",
+				"xq":"images/hw3.jpg"	
+	},
+	{
+	            "name":"汉源清溪贡椒",
+	            "price":"￥49.90",
+	            "url":"images/gh3.jpg",
+	            "tip":"汉源花椒100克 原味 好吃不辣",
+				"goodsId":"20190803",
+				"xq":"images/hw2.jpg"				
+	},
+	{
+	            "name":"雪域好米",
+	            "price":"￥73.00",
+	            "url":"images/gh4.jpg",
+	            "tip":"雪域米川胚芽营养米 2.5kg 香浓入口",
+				"goodsId":"20190804",
+				"xq":"images/hw4.jpg"
+	},
+	{       
+	            "name":"居之味清蒸蘑菇鸡",
+	            "price":"￥58.00",
+	            "url":"images/gh5.jpg",
+				"goodsId":"20190805",
+				"tip":"居之味清蒸蘑菇鸡520G 肉质鲜美 保你吃了还想吃",
+				"xq":"images/hw5.png"
+	},
+	{
+	            "name":"绵阳米粉",
+	            "price":"￥50.00",
+	            "url":"images/gh6.jpg",
+				"goodsId":"20190806",
+				"tip":"绵阳米粉（混装）240g*5 健康美味 0添加",
+				"xq":"images/hw6.jpg"
+	},
+	{
+	            "name":"蓝莓酒",
+	            "price":"￥42.00",
+	            "url":"images/gh7.jpg",
+	            "tip":"百年誉甜型蓝莓酒7度750ml750ml  -7度 百年誉 好福气",
+				"goodsId":"20190807",
+				"xq":"images/hw7.jpg"
+	},
+	{
+	            "name":"纯山茶油",
+	            "price":"￥218.00",
+	            "url":"images/gh8.jpg",
+	            "tip":"舌尖上的森林  绿色有机 纯山茶油500ml  初级初榨 月子油 中国油 放心油500ml*1",
+				"goodsId":"20190808",
+				"xq":"images/hw8.jpg"
+	},
+	{
+	            "name":"健康白酒",
+	            "price":"￥360.00",
+	            "url":"images/gh9.jpg",
+	            "tip":"硒姑娘-小酒 健康白酒 朋友小聚首选 41度 125ml*24瓶 41度 125ml*24瓶",
+				"goodsId":"20190809",
+				"xq":"images/hw9.jpg"
+	},
+	{
+	            "name":"蛋糕",
+	            "price":"￥190.00",
+	            "url":"images/gh10.jpg",
+	            "tip":"幸福西饼-熊猫嘟嘟蛋糕-9寸（2磅）9寸-混合口味",
+				"goodsId":"20190810",
+				"xq":"images/hw10.jpg"
+	},
+	{
+	            "name":"绿茶",
+	            "price":"￥200.00",
+	            "url":"images/gh11.jpg",
+	            "tip":"花枝山有机富硒茶绿茶  120g*2条",
+				"goodsId":"20190811",
+				"xq":"images/hw11.jpg"
+	},
+	{
+	            "name":"枸杞",
+	            "price":"￥209.00",
+	            "url":"images/gh12.jpg",
+	            "tip":"沃福百瑞 宁夏中宁特优级枸杞子450g红色礼盒450克（15gx30袋）",
+				"goodsId":"20190812",
+				"xq":"images/hw12.jpg"
+	}
+	
+]
