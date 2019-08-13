@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/shopping.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="top clearfix">
+        <div class="container">
+            <div class="top_t">
+                <ul class="list_right">
+                    <li><a href="index.html">土购网首页</a></li>
+                    <li>
+                        <a href="">我的土购</a>
+                        <i class="fa fa-angle-down"></i>
+                        <ul>
+                            <li><a href="">我的订单</a></li>
+                            <li><a href="">评价商品</a></li>
+                        </ul>
+                    </li>
+                    <li class="god1">
+                        <em class="e1">
+                            <a href="login.html">购物车</a>
+                            <!-- <font class="num">0</font> -->
+                        </em>
+                        <em class="e2">
+                            <a href="shopping.html" style="color: red">购物车</a>
+                            <!-- <font class="num">2</font> -->
+                        </em>
+                    </li>
+                    <li><a href="">卖家中心</a></li>
+                    <li>
+                        <i class="fa fa-volume-control-phone" style="color: #E27779;"></i> 客服热线：
+                        <b style="color: #E37E7F;">4008002923</b>
+                    </li>
+                    <li><a href="http://weibo.com/tugoo"><i class="fa fa-weibo"></i></a></li>
+                    <li>
+                        <a href=""><i class="fa fa-weixin"></i></a>
+                        <img src="images/APP.png" alt="">
+                    </li>
+                </ul>
+                <em id="login_str">
+                    你好，欢迎来到土购网！
+                    <a href="login.html">请登录</a>
+                    <span>|</span>
+                    <a href="register.html">免费注册</a>
+                </em>
+                <em id="login_str2">
+                    你好<span style="color: #ff0000">XXX</span>，欢迎来到土购网！
+                    <a href="">退出登录</a>
+                </em>
+            </div>
+            <div class="container shoppingcart">
+                <div class="gift-info">
+                    <div class="cont-title">我的购物车</div>
+                    <div class="gift-cont">
+                        <table class="tab" cellspacing="0">
+                            <thead class="hd">
+                                <tr>
+                                    <th class="th">
+                                        <input type="checkbox" class="ui_inpt" checked="check">
+                                        <label for="">全选</label>
+                                        商品
+                                    </th>
+                                    <th>价格</th>
+                                    <th>数量</th>
+                                    <th>小计</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+                            <tfoot class="t_foot">
+                                <tr class="t_foot_tr">
+                                    <td colspan="6"></td>
+                                </tr>
+                                <tr class="foot_t">
+                                    <td colspan="6">
+                                        <input type="checkbox" class="g_put" checked="check">
+                                        <label for="" class="txt">全选</label>
+                                        <a href="javascript:;" class="ta">
+                                            <i></i>
+                                            删除选中的商品
+                                        </a>
+                                        <a href="goods.html" class="ts">
+                                            <i></i>
+                                            返回继续购物
+                                        </a>
+                                        <div class="t_right">
+                                            <form action="" id="form">
+                                                <a href="" class="des">结算</a>
+                                            </form>
+                                            <label for="" class="for">
+                                                共
+                                                <span id="num">1</span>
+                                                件商品
+                                            </label>
+                                            <label for="" class="for_in">
+                                                总计：
+                                                <span id="sum">￥39.60</span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="foot container">
+                <em>
+                    <a href=""> <img src="images/xns315.gif" alt=""></a>
+                    <a href=""><img src="images/baiqiang.gif" alt=""></a>
+                    <a href=""><img src="images/logo.jpg" alt=""></a>
+                </em>
+                <p>
+                    <a href="">关于我们</a>
+                    <a href="">联系我们</a>
+                    <a href="">隐私声明</a>
+                    <a href="">服务条款</a>
+                    <a href="">招贤纳士</a>
+                    <a href="">商家入驻</a>
+                </p>
+                <p>增值电信业务经营许可证赣B2-2012052 赣ICP备12003095-2号 Copyright 2013-2016 版权所有 tugoo.net</p>
+                <div>
+                    <a href=""><img src="images/beian.png" alt=""></a>
+                    <p>赣公网安备 36070202000100号</p>
+                </div>
+            </div>
+</body>
+<script src="libs/ajax.js"></script>
+<script src="libs/cookie.js"></script>
+<script src="js/shopping.js"></script>
+<script src="js/jquery.1.12.4.js"></script>
+<script>
+    var msg = localStorage.getItem("loginUser");
+    if (msg) {
+        $("#login_str2").show();
+        $("#login_str").hide();
+        $("#login_str2").find("span").html(JSON.parse(msg).user);
+        $(".e1").hide();
+        $(".e2").show();
+
+    } else {
+        $("#login_str").show();
+        $("#login_str2").hide();
+        $(".e2").hide();
+        $(".e1").show();
+    }
+    $("#login_str2").find("a").click(function () {
+        localStorage.removeItem("loginUser");
+        $("#login_str").show();
+        $("#login_str2").hide();
+        $(".e2").hide();
+        $(".e1").show();
+    })
+</script>
+
+</html>
